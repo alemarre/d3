@@ -2472,7 +2472,7 @@
   d3_time.years = d3_time.year.range;
   d3_time.years.utc = d3_time.year.utc.range;
   d3_time.day = d3_time_interval(function(date) {
-    var day = new d3_date(2e3, 0);
+    var day = new d3_date(2e3, 0, 0);
     day.setFullYear(date.getFullYear(), date.getMonth(), date.getDate());
     return day;
   }, function(date, offset) {
